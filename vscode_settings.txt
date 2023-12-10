@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Ayu Mirage",
     "[python]": {
         "editor.formatOnType": true
     },
@@ -7,13 +6,16 @@
     "code-runner.runInTerminal": true,
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 16,
+    "workbench.colorCustomizations" : {
+        "terminal.foreground" : "#00FD61",
+        "terminal.background" : "#000000"
+    },   
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "php": "php",
         "python": "python -u",
         "go": "go run",
         "powershell": "powershell -ExecutionPolicy ByPass -File",
@@ -24,5 +26,7 @@
     },
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Ayu Dark Bordered",
+    "explorer.confirmDragAndDrop": false,
    
 }
