@@ -37,3 +37,17 @@ sudo apt install openjdk-17-jdk-headless -y
 # install go
 sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
+
+# install different version (python3.9)
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+ 
+mkdir ~/python && cd ~/python
+wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0b3.tgz
+cd Python-3.9.0b3
+./configure --enable-optimizations
+ 
+sudo make install
+
+# install stm32cudeide (optional)
+# bash st-stm32cubeide_1.14.0_19471_20231121_1200_amd64.sh
+# sudo apt-get install libncurses5 -y
