@@ -10,8 +10,11 @@ git config --global user.name="viettr"
 git config --global user.email "viettran295@gmail.com"
 # git remote set-url origin https://<username>:<personal_token>@github.com/viettran295/<repo_name>.git
 
-# install nvim
+# install and setup nvim 
 sudo apt install neovim -y
+mkdir ~/.config/nvim ~/Desktop/nvim_setup
+cd ~/Desktop/nvim_setup && git clone https://github.com/nvim-lua/kickstart.nvim.git
+cp ./init.lua ~/.config/nvim
 
 # install docker
 ## Add Docker's official GPG key:
@@ -39,7 +42,7 @@ sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # install different version (python3.9)
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget -y
  
 mkdir ~/python && cd ~/python
 wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0b3.tgz
