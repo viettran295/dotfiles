@@ -11,7 +11,7 @@ git config --global user.email "viettran295@gmail.com"
 # git remote set-url origin https://<username>:<personal_token>@github.com/viettran295/<repo_name>.git
 
 # install and setup nvim 
-sudo apt install neovim -y
+sudo snap install neovim -y
 mkdir ~/.config/nvim ~/Desktop/nvim_setup
 cd ~/Desktop/nvim_setup && git clone https://github.com/nvim-lua/kickstart.nvim.git
 cp ./init.lua ~/.config/nvim
