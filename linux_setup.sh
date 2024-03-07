@@ -8,7 +8,7 @@ sudo apt install git -y
 sudo apt install tig -y
 git config --global user.name="viettr"
 git config --global user.email "viettran295@gmail.com"
-# git remote set-url origin https://<username>:<personal_token>@github.com/viettran295/<repo_name>.git
+# git remote set-url origin https://viettran295:<personal_token>@github.com/viettran295/<repo_name>.git
 
 # install and setup nvim 
 sudo snap install neovim -y
