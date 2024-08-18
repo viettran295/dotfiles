@@ -62,5 +62,9 @@ sudo apt-get install ibus ibus-bamboo --install-recommends
 ibus restart
 # Đặt ibus-bamboo làm bộ gõ mặc định
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
+
 # lf - list file Terminal file manager
 sudo apt install lf
+
+# Text highlight for cat command
+sudo apt install bat
