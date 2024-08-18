@@ -28,13 +28,10 @@ cmd mkdir ${{
   mkdir $dir
 }}
 
-cmd quit-cd ${{
-        printf "$LF_LAST_DIR_PATH"
-        cd $LF_LAST_DIR_PATH
-        exit 0
+cmd code ${{
+        code .
 }}
 
-map <enter> quit-cd
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
 # use either file extensions and/or mime types here. Below uses an editor for
