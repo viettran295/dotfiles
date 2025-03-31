@@ -77,3 +77,9 @@ sudo install lazygit /usr/local/bin
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Command line fuzzy finder 
+sudo apt install fzf
+
+# nvim clipboard tool
+sudo apt install xsel

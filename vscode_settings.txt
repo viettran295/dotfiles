@@ -22,7 +22,7 @@
         "bat": "cmd /c",
         "csharp": "scriptcs",
         "typescript": "ts-node",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "rust": "cd $dir && cargo run",
     },
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
